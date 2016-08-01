@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.alonsodiez.miscontactos.DetalleContacto">
+
+    <TextView
+        android:id="@+id/tvNombreContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_datos"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_contacto"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:onClick="llamar"
+        >
+
+        <ImageView
+            android:id="@+id/imgvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user48"
+            />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_contacto"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        >
+
+        <ImageView
+            android:id="@+id/imgvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar48"
+            />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:onClick="llamar"
+        >
+
+        <ImageView
+            android:id="@+id/imgvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconotelefono"
+            />
+        
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:onClick="enviarEmail"
+        >
+        <ImageView
+            android:id="@+id/imgvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/email"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:onClick="llamar"
+        >
+
+        <ImageView
+            android:id="@+id/imgvDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contactcard48"
+            />
+
+        <TextView
+            android:id="@+id/tvDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMiBotonEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area_detalle"
+        android:text="@string/editar"
+        android:layout_marginTop="20dp"
+        android:theme="@style/MiBotonRaised"
+        android:onClick="editarDatos"
+        />
+</LinearLayout>

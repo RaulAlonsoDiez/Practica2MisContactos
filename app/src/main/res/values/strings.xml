@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MisContactos</string>
+    <string name="nombre_contacto">Nombre de contacto</string>
+    <string name="telefono">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="descripcion">Descripción contacto</string>
+    <string name="fecha">Fecha nacimiento</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="editar">Editar Datos</string>
+    <string name="confirmar_datos">Confirmar Datos</string>
+    <string name="pnombre_contacto">Nombre de contacto</string>
+    <string name="ptelefono">Teléfono</string>
+    <string name="pemail">Email</string>
+    <string name="pdescripcion">Descripción contacto</string>
+    <string name="pfecha">Fecha nacimiento</string>
+</resources>
